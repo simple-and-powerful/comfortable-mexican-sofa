@@ -11,6 +11,7 @@ module ComfortableMexicanSofa::ActsAsTree
         :order          => nil, 
         :counter_cache  => nil,
         :dependent      => :destroy,
+        :required       => false,
         :touch          => false }
       configuration.update(options) if options.is_a?(Hash)
       
